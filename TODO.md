@@ -10,9 +10,8 @@
         ----
     group2(p5, p4)
 
-- cgroups (control groups)
-    manage (CPU, memory, network, I/O filesystem).
-
 - networking (... .sock)
 
-- filesystem (... I/O).
+- [-] cgroups (control groups)
+    manage (memory max)(CPU, memory, network, I/O filesystem).
+- [x] filesystem (... I/O) # as root (looks like it's required).
