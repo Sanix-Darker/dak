@@ -12,5 +12,6 @@ run: build
 pull: build
 	cargo run pull --image yyyy
 
+# will failed, showed as a wrong param for clap
 zigzag: build
 	cargo run zigzag --image yyyy

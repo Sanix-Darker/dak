@@ -1,11 +1,11 @@
-use std::ffi::CString;
 use nix::mount::{mount, MsFlags};
+use std::ffi::CString;
 
-pub fn mount_overlayfs(){
-    let lowerdir =  "./lower";
-    let upperdir =  "./upper";
-    let workdir =  "./work";
-    let mergedir =  "./merge";
+pub fn mount_overlayfs() {
+    let lowerdir = "./lower";
+    let upperdir = "./upper";
+    let workdir = "./work";
+    let mergedir = "./merge";
 
     std::fs::create_dir_all(lowerdir).expect("Failed to create lowerdir");
     std::fs::create_dir_all(upperdir).expect("Failed to create upperdir");
@@ -22,6 +22,7 @@ pub fn mount_overlayfs(){
         mergedir,
         Some("overlay"),
         MsFlags::empty(),
-        Some(&*CString::new(options).unwrap())
-    ).expect("Failed to mount overlay filesystem");
+        Some(&*CString::new(options).unwrap()),
+    )
+    .expect("Failed to mount overlay filesystem");
 }

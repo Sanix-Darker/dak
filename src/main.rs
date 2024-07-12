@@ -1,7 +1,8 @@
-mod filesystem;
 mod cgroups;
 mod cli;
 mod container;
+mod filesystem;
+mod namespaces;
 
 fn main() {
     let matches = cli::build_cli().get_matches();
