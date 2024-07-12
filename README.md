@@ -1,6 +1,6 @@
 # DAK
 
-A controversial dumb alternative to `docker run` (dak).
+A controversial dumb docker alternative (dak).
 
 ## REQUIREMENTS
 
