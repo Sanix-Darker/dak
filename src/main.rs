@@ -1,9 +1,10 @@
+mod filesystem;
 mod cgroups;
-mod container;
 mod cli;
+mod container;
 
 fn main() {
-    let matches  = cli::build_cli().get_matches();
+    let matches = cli::build_cli().get_matches();
 
     match matches.subcommand() {
         Some(("run", matches)) => {
@@ -13,13 +14,13 @@ fn main() {
                 // filesystem
                 container::start_container(image)
             }
-        },
+        }
         Some(("pull", matches)) => {
             if let Some(image) = matches.get_one::<String>("image") {
                 println!("> Pulling image : {:?}", image);
                 // download of the image
             }
-        },
+        }
         _ => unreachable!("clap should ensure we don't get here"),
     };
 }
