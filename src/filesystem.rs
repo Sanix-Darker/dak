@@ -2,10 +2,10 @@ use nix::mount::{mount, MsFlags};
 use std::ffi::CString;
 
 pub fn mount_overlayfs() {
-    let lowerdir = "./lower";
-    let upperdir = "./upper";
-    let workdir = "./work";
-    let mergedir = "./merge";
+    let lowerdir = "/lower";
+    let upperdir = "/upper";
+    let workdir = "/work";
+    let mergedir = "/merge";
 
     std::fs::create_dir_all(lowerdir).expect("Failed to create lowerdir");
     std::fs::create_dir_all(upperdir).expect("Failed to create upperdir");
