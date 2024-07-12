@@ -1,4 +1,4 @@
-.PHONY: format build run
+.PHONY: format build run zigzag
 
 format:
 	cargo fmt
