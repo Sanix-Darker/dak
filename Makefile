@@ -1,10 +1,10 @@
-.PHONY: build run format
+.PHONY: format build run
 
 format:
 	cargo fmt
 
 build:
-   	 cargo build
+	cargo build
 
 run: build
-	 cargo run
+	cargo run

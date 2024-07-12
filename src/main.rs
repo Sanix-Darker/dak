@@ -1,6 +1,5 @@
 fn main() {
-    let x =
-    "....";
+    let x = "aaaaaa";
 
     println!("Hello dk {:?}!", x);
 }
