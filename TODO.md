@@ -5,14 +5,14 @@
 
 ## CONTAINER (x docker/ podman..)
 
-- namespaces ( )
+- [ ] namespaces ( )
     group1(p1, p2, p3)
         ----
     group2(p5, p4)
 
-- networking (... .sock)
+- [ ] networking (... .sock)
 
-- [-] cgroups (control groups)
+- [x] cgroups (control groups)
     manage (memory max)(CPU, memory, network, I/O filesystem).
 - [x] filesystem (... I/O) # as root (looks like it's required).
 
