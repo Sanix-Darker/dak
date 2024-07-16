@@ -1,15 +1,17 @@
 # DAK
 
-A controversial dumb docker alternative (dak).
+<img width="100%" src="https://github.com/user-attachments/assets/54d62f84-7e30-4944-8b38-4e4f8a41216f" />
+
+A controversial dumb docker alternative (dak) for learning purposes.
 
 ## FEATURES
 
-- [ ] Create a container and "start it".
+- [ ] Create a container and "start it" (in progress).
     ```bash
     $ dak run --image xyz
     ```
 
-- [ ] Pull a container.
+- [ ] Pull a container, (comming soon).
     ```bash
     $ dak pull --image xyz
     ```
